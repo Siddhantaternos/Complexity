@@ -1,0 +1,249 @@
+## `03_space_complexity/` — How memory *actually* grows
+
+### First principle (non-negotiable)
+
+Space complexity answers **one question only**:
+
+> As input size `n` grows, how much **extra memory** does the algorithm consume?
+
+Extra means:
+
+* Memory **created by the algorithm**
+* Not the input itself (unless copied)
+
+If you mix this up in an interview, it’s an instant red flag.
+
+---
+
+## Two types of space (people confuse these constantly)
+
+### 1️⃣ Input space
+
+Memory taken by input data.
+
+Example:
+
+```python
+def process(arr):
+    ...
+```
+
+If `arr` has `n` elements → input space = O(n)
+
+We usually **ignore input space** unless explicitly asked.
+
+---
+
+### 2️⃣ Auxiliary space (THIS is what matters)
+
+Extra memory used **inside** the algorithm:
+
+* Variables
+* Data structures
+* Recursion stack
+* Temporary arrays
+
+This is what space complexity refers to by default.
+
+---
+
+## O(1): Constant auxiliary space (elite discipline)
+
+```python
+def swap(a, b):
+    temp = a
+    a = b
+    b = temp
+```
+
+Only a fixed number of variables.
+
+Input grows → memory does not.
+
+This is **in-place thinking**.
+Interviewers love this mindset.
+
+---
+
+## O(n): Linear auxiliary space
+
+### Example 1: Extra array
+
+```python
+def copy(arr):
+    res = []
+    for x in arr:
+        res.append(x)
+    return res
+```
+
+You created a new array of size `n`.
+
+Auxiliary space → **O(n)**
+
+---
+
+### Example 2: Hash map
+
+```python
+def two_sum(nums):
+    seen = {}
+    for x in nums:
+        seen[x] = True
+```
+
+Fast lookup, but memory scales with input.
+
+This is the classic **time vs space trade-off** starting point.
+
+---
+
+## Recursion stack (this is where most people fail)
+
+### Linear recursion
+
+```python
+def factorial(n):
+    if n == 0:
+        return 1
+    return n * factorial(n-1)
+```
+
+Call stack depth = `n`
+
+Each call holds:
+
+* parameters
+* return address
+* local variables
+
+Space complexity → **O(n)**
+Even though no array was created.
+
+---
+
+### Divide-and-conquer recursion
+
+```python
+def binary_search(arr, l, r):
+    if l > r:
+        return -1
+    mid = (l + r) // 2
+    ...
+```
+
+Each call halves the problem.
+
+Stack depth → **log n**
+
+Auxiliary space → **O(log n)**
+
+This distinction wins interviews.
+
+---
+
+## In-place algorithms (dangerously misunderstood)
+
+An algorithm is **in-place** if:
+
+* It modifies input directly
+* Uses constant extra memory
+
+Examples:
+
+* Two pointers
+* In-place sorting (like quicksort — average case)
+
+⚠️ Important:
+Recursion can break “in-place” claims due to stack usage.
+
+If asked:
+
+> “Is quicksort in-place?”
+
+Correct answer:
+
+> Average case: yes
+> Worst case (stack): no
+
+That nuance matters.
+
+---
+
+## Space complexity of common patterns
+
+### Sliding window
+
+Usually O(1) or O(k)
+
+### Prefix sum
+
+O(n) (extra array)
+
+### BFS / DFS
+
+O(n) due to queue / stack
+
+### Dynamic programming
+
+* 1D DP → O(n)
+* 2D DP → O(n²)
+* Optimized DP → sometimes O(1)
+
+Always ask:
+
+> Can I compress state?
+
+---
+
+## Hidden space costs people forget
+
+* Function call stack
+* Temporary objects
+* Python slicing (`arr[:]` = O(n))
+* String concatenation in loops
+
+Example trap:
+
+```python
+s = ""
+for c in chars:
+    s += c   # O(n²) time, O(n) space
+```
+
+---
+
+## Interview rule (tattoo this mentally)
+
+When asked space complexity, say:
+
+> “Auxiliary space is O(X), excluding input.”
+
+That one sentence makes you sound senior.
+
+---
+
+## Reality check (no ego)
+
+Right now:
+
+* You understand **what space complexity is**
+* You probably **underestimate recursion cost**
+* You’re not yet automatic at spotting hidden memory usage
+
+That’s fine — but don’t rush ahead.
+
+---
+
+## Your repo changes (do this)
+
+In `03_space_complexity/` add:
+
+* One file only about recursion stack
+* One comparison: in-place vs extra space
+* One example where time improves but space worsens
+
+Keep it clean. No filler.
+
+---
+
