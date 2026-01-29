@@ -1,13 +1,18 @@
-# ⚙️ Algorithm Complexity Notes
+# ⚙️ Algorithm Complexity
 
-This repository contains **clear, interview-ready notes on time and space complexity**, written for long-term understanding rather than exam memorization.
+This repository is my **foundational guide to algorithm complexity**, built to develop *clear intuition*, *interview-level reasoning*, and *real-world decision-making* — not rote memorization.
 
-The focus is not only on Big-O notation, but also on **real-world resource usage** such as memory, CPU behavior, power consumption, and network costs. These notes are designed for students, interview preparation, and practical system thinking.
+The goal is to move from **recognizing Big-O** → **predicting complexity before coding**.
 
-### What you'll find here
-- Time & Space Complexity fundamentals
-- Trade-offs between performance and memory
-- Real-world resource considerations
-- Practical examples with clean explanations
+---
 
-This repo is intended to grow alongside problem-solving and system design learning.
+## What This Repo Covers
+- Time Complexity (growth patterns, recursion, amortized analysis)
+- Space Complexity (auxiliary vs input, recursion stack, in-place trade-offs)
+- Code → Complexity mapping
+- Time vs Space trade-offs (interview reasoning)
+
+---
+
+## Complexity Mastery Map (100%)
+
