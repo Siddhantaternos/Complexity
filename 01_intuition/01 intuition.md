@@ -1,4 +1,4 @@
-## `01_intuition/why_complexity_matters.md`
+## 01_intuition / why_complexity_matters
 
 ### What time & space complexity actually are (no bullshit)
 
