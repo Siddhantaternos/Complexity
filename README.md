@@ -75,6 +75,10 @@ Complexity/
   **“What grows when input grows?”**
 * Use this repo alongside problem-solving (LeetCode, DSA)
 
+
+![Big O Time Complexity Chart]("C:\Users\Siddhant\Desktop\Big_O_Cheatsheet.png")
+
+
 ---
 
 ## Progress check (self-evaluation)
