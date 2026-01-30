@@ -1,21 +1,21 @@
 # ⚙️ Algorithm Complexity | Structured Learning Notes
 
-This repository is a **structured, execution-focused guide to mastering algorithm complexity**, built to develop **interview-ready intuition**, not memorized definitions. The goal is to understand **how time and space grow as input scales**, and to reason confidently about performance trade-offs in real code.
+This repository is a **practical, execution-focused guide to mastering algorithm complexity**, designed to develop **interview-ready intuition**, not memorized definitions. The goal is to understand **how time and space grow as input scales**, and reason confidently about performance trade-offs in real code.
 
-This repo is designed to be **visited repeatedly**: to check progress, refresh intuition, and identify the *next concept to master*.
+It’s meant to be **visited repeatedly**: to check progress, refresh intuition, and identify the *next concept to master*.
 
 ---
 
-## What this repository teaches
+## What You’ll Learn
 
 * What complexity *actually measures* (beyond Big-O symbols)
 * How to analyze **time and space** from real code
 * How recursion, loops, and data structures affect growth
-* How to reason about **trade-offs** in interviews and real systems
+* How to reason about **trade-offs** in interviews and production systems
 
 ---
 
-## Learning Roadmap (follow top → bottom)
+## Learning Roadmap (Top → Bottom)
 
 ```
 01. Intuition & Meaning
@@ -29,7 +29,7 @@ This repo is designed to be **visited repeatedly**: to check progress, refresh i
 05. Trade-offs & Interview Reasoning
 ```
 
-You should not skip steps. Each layer depends on the previous one.
+Each step builds on the previous one—**don’t skip**.
 
 ---
 
@@ -38,27 +38,27 @@ You should not skip steps. Each layer depends on the previous one.
 ```
 Complexity/
 │
-├── 01_intuition/                                           # What complexity means & why it matters
+├── 01_intuition/                   # What complexity means & why it matters
 │   ├── why_complexity_matters.md
 │   └── growth_visuals.md
 │
-├── 02_time_complexity/                                     # How runtime grows
+├── 02_time_complexity/             # How runtime grows
 │   ├── constant_log_linear.py
 │   ├── nested_loops.py
 │   ├── recursion_examples.py
 │   └── amortized_examples.py
 │
-├── 03_space_complexity/                                    # How memory grows
+├── 03_space_complexity/            # How memory grows
 │   ├── input_vs_auxiliary.py
 │   ├── recursion_stack.py
 │   └── in_place_vs_extra_space.py
 │
-├── 04_code_to_complexity/                                  # Analyze unknown code
+├── 04_code_to_complexity/          # Analyze unknown code
 │   ├── analyze_given_code.md
 │   ├── brute_vs_optimized.py
 │   └── complexity_annotations.py
 │
-├── 05_tradeoffs/                                           # Decision-making & interviews
+├── 05_tradeoffs/                   # Decision-making & interviews
 │   ├── time_vs_space.md
 │   └── real_interview_questions.md
 │
@@ -67,34 +67,58 @@ Complexity/
 
 ---
 
-## How to use this repo
+## How to Use This Repository
 
-* Start from **01_intuition**
-* Do not move forward until you can **explain the topic in words**
-* Every example should answer:
-  **“What grows when input grows?”**
-* Use this repo alongside problem-solving (LeetCode, DSA)
-
-
-![Big O Time Complexity Chart]("C:\Users\Siddhant\Desktop\Big_O_Cheatsheet.png")
-
+* Start with **01_intuition**
+* Don’t move forward until you can **explain the topic in your own words**
+* Every example should answer: **“What grows when input grows?”**
+* Use this alongside problem-solving platforms (LeetCode, DSA practice)
 
 ---
 
-## Progress check (self-evaluation)
+## Visual Guide to Complexity
 
-* If you recognize Big-O → you are early
-* If you can explain complexity → you are learning
-* If you can predict it from code → you are interview-ready
+```
+Operations
+^
+|                   /  -> O(2^n)   < Horrible >
+|                  /
+|                 /
+|                /  -> O(n^2)   < Horrible >
+|               /
+|              /
+|             /         
+|            /
+|           /  -> O(n log n) < Bad >
+|          /
+|         /
+|        /
+|       /
+|      /   -> O(n)  < Fair >
+|     /
+|    /
+|   /   -> O(log n)  < Good >
+|  /
+| /   -> O(1)  < Best >
++--------------------------------------------------> Elements
+```
 
-Strings, arrays, and advanced patterns should only be explored **after** solid complexity intuition.
+---
+
+## Progress Check (Self-Evaluation)
+
+* Recognize Big-O → **Early**
+* Explain complexity in words → **Learning**
+* Predict complexity from code → **Interview-ready**
+
+Advanced topics (strings, arrays, patterns) should be tackled **only after** building solid complexity intuition.
 
 ---
 
 ## Purpose
 
-This repository exists to build a **mental framework** that makes future topics (DSA, SQL performance, system design) easier and faster to learn.
+This repository exists to build a **mental framework** that makes future topics—DSA, SQL performance, system design—faster and easier to learn.
 
-Master this once. Everything else compounds.
+Master complexity once. Everything else compounds.
 
 ---
