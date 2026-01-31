@@ -1,4 +1,4 @@
-## 01_intuition / why_complexity_matters
+## Why Complexity Matters?
 
 ### What time & space complexity actually are (no bullshit)
 
