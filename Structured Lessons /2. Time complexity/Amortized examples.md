@@ -2,7 +2,7 @@
 
 ## Amortized Time (advanced but unavoidable)
 
-Some operations are **occasionally expensive** but **usually cheap**.
+Some operations are **occasionally expensive** but **usually cheap**. 
 
 Example: dynamic array append.
 
