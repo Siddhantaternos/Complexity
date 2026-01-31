@@ -1,7 +1,7 @@
 # Part 2 — `nested_loops.py`
 
 ## Sequential vs Nested Growth (where people screw up)
-
+ 
 ### Sequential loops → addition
 
 ```python
