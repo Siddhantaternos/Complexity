@@ -10,7 +10,7 @@ Only **growth behavior** decides whether something ships or dies.
 
 ## First principle (non-negotiable)
 
-Time complexity answers **one question only**:
+Time complexity answers **one question only**: 
 
 > As input size `n` grows, how many **operations** does the algorithm perform?
 
