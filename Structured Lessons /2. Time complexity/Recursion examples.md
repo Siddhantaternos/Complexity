@@ -1,6 +1,6 @@
 # Part 3 — `recursion_examples.py`
 
-## Recursion: Linear vs Branching (the silent killer)
+## Recursion: Linear vs Branching (the silent killer) 
 
 ### Linear recursion
 
