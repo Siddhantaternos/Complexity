@@ -1,6 +1,6 @@
 # ⚙️ Algorithm Complexity | Structured Learning Notes
 
-This repository is a **practical, execution-focused guide to mastering algorithm complexity**, designed to develop **interview-ready intuition**, not memorized definitions. The goal is to understand **how time and space grow as input scales**, and reason confidently about performance trade-offs in real code.
+This repository is a **practical, execution focused guide to mastering algorithm complexity**, designed to develop **interview ready intuition**, not memorized definitions. The goal is to understand **how time and space grow as input scales**, and reason confidently about performance trade offs in real code.
 
 It’s meant to be **visited repeatedly**: to check progress, refresh intuition, and identify the *next concept to master*.
 
@@ -29,7 +29,7 @@ It’s meant to be **visited repeatedly**: to check progress, refresh intuition,
 05. Trade-offs & Interview Reasoning
 ```
 
-Each step builds on the previous one—**don’t skip**.
+Each step builds on the previous one **don’t skip**.
 
 ---
 
@@ -72,7 +72,7 @@ Complexity/
 * Start with **01_intuition**
 * Don’t move forward until you can **explain the topic in your own words**
 * Every example should answer: **“What grows when input grows?”**
-* Use this alongside problem-solving platforms (LeetCode, DSA practice)
+* Use this alongside problem solving platforms (LeetCode, DSA practice)
 
 ---
 
@@ -117,7 +117,7 @@ Advanced topics (strings, arrays, patterns) should be tackled **only after** bui
 
 ## Purpose
 
-This repository exists to build a **mental framework** that makes future topics—DSA, SQL performance, system design—faster and easier to learn.
+This repository exists to build a **mental framework** that makes future topics DSA, SQL performance, system design faster and easier to learn.
 
 Master complexity once. Everything else compounds.
 
